@@ -16,11 +16,21 @@ public class GNode<T> {
         this.vertices = new LinkedList<>();
     }
 
+    /*
+     * Copies only the value / data not the vertices
+     */
     public GNode(GNode<T> gNode) {
         this.data = gNode.getData();
     }
 
     public void addVertex(GNode<T> gNode) {
         this.vertices.add(gNode);
+    }
+
+    /*
+     * Removes all the connections with adjacent vertex.
+     */
+    public void removeVertices() {
+        this.vertices.clear();
     }
 }
