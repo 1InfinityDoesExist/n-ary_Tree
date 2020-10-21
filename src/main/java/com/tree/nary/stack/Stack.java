@@ -20,18 +20,8 @@ public class Stack<T> extends LinkedList<T> implements Stackable<T> {
     }
 
     @Override
-    public boolean isEmpty() {
-        return size() == 0;
-    }
-
-    @Override
     public T peek() {
         return peekLast();
-    }
-
-    @Override
-    public int size() {
-        return size();
     }
 
     @Override
